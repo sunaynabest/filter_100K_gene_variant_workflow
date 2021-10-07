@@ -16,12 +16,12 @@ The script in this repository, filter_100K_gene_variant_workflow, provides steps
 		- iii) missense variants predicted “deleterious” by the in-silico prediction tool SIFT
 
 
-# STEPS TO USE THIS SCRIPT WITHIN THE RESEARCH ENVIRONMENT
+### STEPS TO USE THIS SCRIPT WITHIN THE RESEARCH ENVIRONMENT
 1. Ensure you are runing python in the correct environment. There should be "(idppy3)" at the start of your terminal line
 	If not:
 			1a) `. /resources/conda/miniconda3/etc/profile.d/conda.sh`
 			1b) `conda activate idppy3`
-	
+
 2. Navigate to the GeneVariantWorkflow folder containing this script (for me this is under /re_gecip/GW_SB/GeneVariantWorkflow)
 
 3. To run on the command line enter: `python filter_gene_variant_workflow.py <enter-the-path-to-the-folder-containing-your-tsv-file-here> <enter-your-tsv-file-name-here>`
@@ -30,7 +30,7 @@ NOTE: path to your folder should be the one containing the GeneVariantWorkflow d
 
 Note: The tsv file must end in ".tsv". It must be tab delimited.
 
-# Output Files
+### Output Files
 
 Output files will be placed into a new folder named after the input tsv file within the final_output/data folder that contains your input file.
 
@@ -44,7 +44,7 @@ Output files will be placed into a new folder named after the input tsv file wit
 - **gene_variant_workflow_rare_missense_all**: Retain all entries with missense in CLIN_SIG_annotation column from gene_variant_workflow_canonical_transcript_rare.csv. Gives output file of rare missenses from 100K and gnomAD. NOTE: don't have CADD scores, may need to run through VEP with plugins if want this.
 - **gene_variant_workflow_rare_missense_SIFT_deleterious**: Retain all entries with SIFT_annotation entry containing deleterious fro the above file. NOTE: don't have CADD scores, may need to run through VEP with plugins if want this.
 
-# ERRORS:
+### ERRORS:
 ERR1: You have not included the file path after running the script
 ERR2: The input file you have linked to does not end in ".tsv"
 ERR3: The input file does not exist at the path you have provided
