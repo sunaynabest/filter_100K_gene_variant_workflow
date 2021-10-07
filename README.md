@@ -46,6 +46,9 @@ Output files will be placed into a new folder named after the input tsv file wit
 
 ### ERRORS:
 ERR1: You have not included the file path after running the script
+
 ERR2: The input file you have linked to does not end in ".tsv"
+
 ERR3: The input file does not exist at the path you have provided
+
 ERR4: The input tsv file you have provided is not in the expected format. It must be tab delineated.
